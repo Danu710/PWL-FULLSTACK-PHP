@@ -1,0 +1,11 @@
+.nav-link.active,
+.nav-link:focus {
+    background-color: #0d95e8 !important;
+    color: white !important;
+}
+
+.dropdown-container .nav-link.active,
+.dropdown-container .nav-link:focus {
+    background-color: #0d95e8 !important;
+    color: white !important;
+}

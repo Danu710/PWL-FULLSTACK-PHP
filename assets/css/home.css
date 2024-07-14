@@ -1,0 +1,44 @@
+:root {
+    --border-color-light: #0000;
+    --border-color-dark: #9999;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --border-color: var(--border-color-dark);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --border-color: var(--border-color-light);
+    }
+}
+
+.school-card {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 8px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: var(--bs-body-bg);
+}
+.school-details {
+    flex: 1;
+}
+.school-details strong {
+    margin-right: 10px;
+    display: inline-block;
+    width: 150px; /* Fixed width for alignment */
+}
+.school-details span {
+    display: inline-block;
+}
+h4 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.school-logo {
+    margin-left: 20px;
+}
