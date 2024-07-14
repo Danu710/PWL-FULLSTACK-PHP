@@ -40,7 +40,7 @@ while ($row = mysqli_fetch_assoc($query_spp)) {
                                 <th scope="col" style="text-align:center">Bayar</th>
                                 <th scope="col" style="text-align:center">Tanggal</th>
                                 <th scope="col" style="text-align:center">Status</th>
-                                <th scope="col" style="text-align:center">Pembayaran</th>
+                                <th scope="col" style="text-align:center">Pembayarannn</th>
                             </tr>
                         </thead>
                         <tbody style="text-align:center">
