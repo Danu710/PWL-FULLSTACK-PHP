@@ -10,16 +10,20 @@
                     <input class="form-control" type="text" id="nipd" name="nipd" required>
                   </div>
                   <div>
-                    <label for="bulan_dibayar">Bulan Dibayar:</label>
-                    <input class="form-control" type="text" id="bulan_dibayar" name="bulan_dibayar" required>
+                    <label for="nama_siswa">Nama Siwa:</label>
+                    <input class="form-control" type="text" id="nama_siswa" name="nama_siswa" required>
                   </div>
                   <div>
-                    <label for="tahun_dibayar">Tahun Dibayar:</label>
-                    <input class="form-control" type="text" id="tahun_dibayar" name="tahun_dibayar" required>
+                    <label for="kelas">Kelas:</label>
+                    <input class="form-control" type="text" id="kelas" name="kelas" required>
                   </div>
                   <div>
-                    <label for="jumlah_bayar">Jumlah Bayar:</label>
-                    <input class="form-control" type="text" id="jumlah_bayar" name="jumlah_bayar" required>
+                      <label for="bulan">Bulan:</label>
+                      <input class="form-control" type="text" id="bulan" name="bulan" required>
+                  </div>
+                  <div>
+                    <label for="bayar">Jumlah Bayar:</label>
+                    <input class="form-control" type="text" id="bayar" name="bayar" required>
                   </div>
                   <div>
                   <button  type="submit" class="btn btn-primary mt-3">Bayar</button>
