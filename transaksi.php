@@ -4,9 +4,31 @@
             Halaman Transaki
         </div>
         <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <form action="proses/proses_tambah_spp.php" method="POST">
+                  <div>
+                    <label for="nipd">NIPD:</label>
+                    <input class="form-control" type="text" id="nipd" name="nipd" required>
+                  </div>
+                  <div>
+                    <label for="nama_siswa">Nama Siwa:</label>
+                    <input class="form-control" type="text" id="nama_siswa" name="nama_siswa" required>
+                  </div>
+                  <div>
+                    <label for="kelas">Kelas:</label>
+                    <input class="form-control" type="text" id="kelas" name="kelas" required>
+                  </div>
+                  <div>
+                      <label for="bulan">Bulan:</label>
+                      <input class="form-control" type="text" id="bulan" name="bulan" required>
+                  </div>
+                  <div>
+                    <label for="bayar">Jumlah Bayar:</label>
+                    <input class="form-control" type="text" id="bayar" name="bayar" required>
+                  </div>
+                  <div>
+                  <button  type="submit" class="btn btn-primary mt-3">Bayar</button>
+        </div>
+    </form>
         </div>
     </div>
 </div>

@@ -23,7 +23,46 @@ while ($row = mysqli_fetch_assoc($query_spp)) {
             Halaman SPP
         </div>
         <div class="card-body">
+        <!-- Modal tambah Siswa baru -->
+            <div class="row">
+                <div class="col d-flex justify-content-end">
+                   <a class="btn btn-primary" href="http://localhost:8080/simsditpweb/transaksi" role="button">Pembayaran SPP</a>
+                </div>
+            </div>
+            <!-- akhir Modal tambah Siswa baru -->
         <?php 
+        if(!empty($result)){
+            foreach($result as $row){
+                ?>
+                  <!-- Modal Delete -->
+                    <div class="modal fade" id="modaldelet<?php echo $row['nipd'] ?>" tabindex="-1"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-md modal-fullscreen-md-down">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Hapus Data Spp</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                     <form class="needs-validation" novalidate method="POST"
+                                         action="proses/proses_hapus_spp.php">
+                                        <input type="hidden" value="<?php echo $row['nipd'] ?>" name="nipd">
+                                        Apakah Anda Ingin Menghapus Data Siswa yang bernama
+                                        <b><?php echo $row['nipd'] ?></b> ?
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Batal</button>
+                                            <button type="submit" class="btn btn-danger hapus" name="delete_spp_validate">Hapus</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal akhir Delete -->
+                <?php
+            }
+        }
         if(empty($result)){
             echo "Data SPP Tidak Ada";
         } else {
@@ -40,7 +79,7 @@ while ($row = mysqli_fetch_assoc($query_spp)) {
                                 <th scope="col" style="text-align:center">Bayar</th>
                                 <th scope="col" style="text-align:center">Tanggal</th>
                                 <th scope="col" style="text-align:center">Status</th>
-                                <th scope="col" style="text-align:center">Pembayarannn</th>
+                                <th scope="col" style="text-align:center">Pembayaran</th>
                             </tr>
                         </thead>
                         <tbody style="text-align:center">
