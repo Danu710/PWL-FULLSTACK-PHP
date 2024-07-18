@@ -46,6 +46,8 @@
                                             href="pegawai"><i class="bi bi-person-lines-fill"></i> Pegawai</a>
                                         <a class="nav-link ps-3 <?php echo (isset($_GET['x']) && $_GET['x'] == 'mapel') ? 'active link-light' : 'link--bs-emphasis-color'; ?>"
                                             href="mapel"><i class="bi bi-book"></i> Mata Pelajaran</a>
+                                        <a class="nav-link ps-3 <?php echo (isset($_GET['x']) && $_GET['x'] == 'guru') ? 'active link-light' : 'link--bs-emphasis-color'; ?>"
+                                            href="guru"><i class="bi bi-person-square"></i> Guru</a>
                                     </div>
                                 </li>
                             <?php } ?>

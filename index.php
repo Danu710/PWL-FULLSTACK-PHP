@@ -108,6 +108,14 @@ if (isset($_GET['x']) && $_GET['x'] == 'home') {
         $page = "home.php";
         include "main.php";
     }
+} elseif (isset($_GET['x']) && $_GET['x'] == 'guru') {
+    if ($_SESSION['level_simsditp'] == 1 || $_SESSION['level_simsditp'] == 2) {
+        $page = "guru.php";
+        include "main.php";
+    } else {
+        $page = "home.php";
+        include "main.php";
+    }
 }
 ?>
 <!-- End Content -->
