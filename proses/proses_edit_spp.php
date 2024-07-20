@@ -12,7 +12,7 @@ $status = (isset($_POST['status'])) ? htmlentities($_POST['status']) : "";
 
 
 if (!empty($_POST['edit_spp_validate'])) {
-    $query = mysqli_query($conn, "UPDATE spp SET nama_siswa='$nama_siswa', kelas='$kelas', 
+    $query = mysqli_query($conn, "UPDATE spp SET nipd='$nipd', nama_siswa='$nama_siswa', kelas='$kelas', 
     bulan='$bulan', bayar='$bayar', tanggal='$tanggal', status='$status' WHERE nipd='$nipd'");
     if (!$query) {
         $_SESSION['message'] = [
