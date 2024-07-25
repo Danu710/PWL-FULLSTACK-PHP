@@ -1,0 +1,13 @@
+{
+  "name": "user/sismditp-web",
+  "description": "project simsditb web",
+  "authors": [
+    {
+      "name": "Ramadhanu Kadir Rachono",
+      "email": "danukr710@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "8.1.17"
+  }
+}
