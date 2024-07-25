@@ -28,3 +28,4 @@
 ## Kontak
 
 Untuk informasi lebih lanjut atau pertanyaan, silakan hubungi pemilik akun GitHub.
+    
