@@ -44,7 +44,7 @@ $json_spp = json_encode($spp);
         <!-- Modal tambah Siswa baru -->
             <div class="row">
                 <div class="col d-flex justify-content-end">
-                   <a class="btn btn-primary" href="http://localhost:8080/simsditpweb/transaksi" role="button">Pembayaran SPP</a>
+                   <a class="btn btn-primary" href="https://simsditp-tech.preview-domain.com/transaksi" role="button">Pembayaran SPP</a>
                 </div>
             </div>
             <!-- akhir Modal tambah Siswa baru -->
