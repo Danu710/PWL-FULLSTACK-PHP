@@ -3,7 +3,7 @@
         'name' => 'user/sismditp-web',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '604b4ee9b632922c6807eb751c686dd087be66ca',
+        'reference' => '1c018a529741436c12b1330d699dad3ca2e39289',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'user/sismditp-web' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '604b4ee9b632922c6807eb751c686dd087be66ca',
+            'reference' => '1c018a529741436c12b1330d699dad3ca2e39289',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
