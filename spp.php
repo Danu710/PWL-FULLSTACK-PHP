@@ -38,7 +38,7 @@ $json_spp = json_encode($spp);
 <div class="col-lg-9 mt-2">
     <div class="card">
         <div class="card-header">
-            Pages SPP
+            Halaman SPP
         </div>
         <div class="card-body">
         <!-- Modal tambah Siswa baru -->
