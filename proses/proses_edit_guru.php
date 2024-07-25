@@ -1,27 +1,28 @@
 <?php
 session_start();
 include "connect.php";
-$nama_guru = (isset($_POST['nama_guru'])) ? htmlentities($_POST['nama_guru']) : "";
-$wali_kelas = (isset($_POST['wali_kelas'])) ? htmlentities($_POST['wali_kelas']) : "";
 
-if (!empty($_POST['edit_guru_validate'])) {
-    $query = mysqli_query($conn, "UPDATE guru SET 
-        nama_guru='$nama_guru', 
-        wali_kelas='$wali_kelas' 
-        WHERE nama_guru='$nama_guru'");
+if (isset($_POST['edit_guru_validate'])) {
+    $nama_guru_lama = $_POST['nama_guru_lama'];
+    $nama_guru_baru = $_POST['nama_guru_baru'];
+    $wali_kelas = $_POST['wali_kelas'];
 
-    if (!$query) {
+    $query = "UPDATE guru SET nama_guru='$nama_guru_baru', wali_kelas='$wali_kelas' WHERE nama_guru='$nama_guru_lama'";
+    if (mysqli_query($conn, $query)) {
         $_SESSION['message'] = [
-            'title' => 'Data Gagal Diedit',
-            'icon' => 'error'
+            'title' => 'Berhasil!',
+            'text' => 'Data guru berhasil diupdate.',
+            'icon' => 'success'
         ];
     } else {
         $_SESSION['message'] = [
-            'title' => 'Data Berhasil Diedit',
-            'icon' => 'success'
+            'title' => 'Gagal!',
+            'text' => 'Data guru gagal diupdate: ' . mysqli_error($conn),
+            'icon' => 'error'
         ];
     }
-    header('Location: ../guru');
-    exit();
 }
+
+header("Location: ../index.php");
+exit();
 ?>

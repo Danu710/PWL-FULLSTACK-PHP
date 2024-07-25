@@ -95,50 +95,50 @@ while ($record = mysqli_fetch_array($query_kelas)) {
                 foreach ($result as $row) {
                     ?>
                     <!-- Modal Edit -->
-                    <div class="modal fade" id="modaledit<?php echo $row['nama_guru'] ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-lg modal-fullscreen-md-down">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Data Guru</h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<div class="modal fade" id="modaledit<?php echo $row['nama_guru'] ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-fullscreen-md-down">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Data Guru</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form class="needs-validation" novalidate method="POST" action="proses_edit_guru.php">
+                    <input type="hidden" value="<?php echo $row['nama_guru'] ?>" name="nama_guru_lama">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput" placeholder="nama" name="nama_guru_baru" required value="<?php echo $row['nama_guru'] ?>">
+                                <label for="floatingInput">Nama</label>
+                                <div class="invalid-feedback">
+                                    Masukan Nama
                                 </div>
-                                <div class="modal-body">
-                                    <form class="needs-validation" novalidate method="POST" action="proses/proses_edit_guru.php">
-                                        <input type="hidden" value="<?php echo $row['nama_guru'] ?>" name="nama_guru">
-                                        <div class="row">
-                                            <div class="col-lg-6">
-                                                <div class="form-floating mb-3">
-                                                    <input type="text" class="form-control" id="floatingInput" placeholder="nama" name="nama_guru" required value="<?php echo $row['nama_guru'] ?>">
-                                                    <label for="floatingInput">Nama</label>
-                                                    <div class="invalid-feedback">
-                                                        Masukan Nama
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div class="form-floating mb-3">
-                                                    <select class="form-select" name="wali_kelas" id="kelas" required>
-                                                        <?php foreach ($kelas as $k): ?>
-                                                            <option value="<?php echo $k['kelas']; ?>" <?php echo ($row['wali_kelas'] == $k['kelas']) ? 'selected' : ''; ?>><?php echo $k['kelas']; ?></option>
-                                                        <?php endforeach; ?>
-                                                    </select>
-                                                    <label for="kelas">Wali Kelas</label>
-                                                    <div class="invalid-feedback">
-                                                        Masukan Wali Kelas
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-                                            <button type="submit" class="btn btn-primary" name="edit_guru_validate" value="12345">Simpan</button>
-                                        </div>
-                                    </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-floating mb-3">
+                                <select class="form-select" name="wali_kelas" id="kelas" required>
+                                    <?php foreach ($kelas as $k): ?>
+                                        <option value="<?php echo $k['kelas']; ?>" <?php echo ($row['wali_kelas'] == $k['kelas']) ? 'selected' : ''; ?>><?php echo $k['kelas']; ?></option>
+                                    <?php endforeach; ?>
+                                </select>
+                                <label for="kelas">Wali Kelas</label>
+                                <div class="invalid-feedback">
+                                    Masukan Wali Kelas
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Modal akhir Edit -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                        <button type="submit" class="btn btn-primary" name="edit_guru_validate" value="12345">Simpan</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal akhir Edit -->
 
                     <!-- Modal Delete -->
                     <div class="modal fade" id="modaldelet<?php echo $row['nama_guru'] ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
