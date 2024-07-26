@@ -4,7 +4,7 @@ $query = mysqli_query($conn, "SELECT * FROM spp");
 while ($record = mysqli_fetch_array($query)) {
     $result[] = $record;
 }
-$query_spp = mysqli_query($conn, "SELECT nipd, nama_siswa, kelas, bulan, bayar, status FROM spp");
+$query_spp = mysqli_query($conn, "SELECT nipd, nama_siswa, kelas, bulan, bayar, transaction_status FROM spp");
 
 
 $spp = [];
@@ -215,7 +215,7 @@ $json_spp = json_encode($spp);
                                         <?php echo $row['tanggal'] ?>
                                     </td>
                                     <td>
-                                        <?php echo $row['status'] ?>
+                                        <?php echo $row['trasaction_status'] ?>
                                     </td>
                                     <td class="d-flex" style="justify-content: center">
                                         <button class="btn btn-warning btn-sm me-1" data-bs-toggle="modal"
