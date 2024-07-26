@@ -42,7 +42,7 @@ $json_spp = json_encode($spp);
             <!-- Modal tambah SPP baru -->
             <div class="row">
                 <div class="col d-flex justify-content-end">
-                    <a class="btn btn-primary" href="https://simsditp.tech/transaksi" role="button">Pembayaran SPP</a>
+                   <a class="btn btn-primary" href="https://simsditp.tech/transaksi" role="button">Pembayaran SPP</a>
                 </div>
             </div>
             <!-- akhir Modal tambah SPP baru -->
@@ -60,7 +60,8 @@ $json_spp = json_encode($spp);
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <form class="needs-validation" novalidate method="POST" action="spp/proses_edit_spp.php">
+                                    <form class="needs-validation" novalidate method="POST"
+                                        action="proses/proses_edit_spp.php">
                                         <input type="hidden" value="<?php echo $row['nipd'] ?>" name="nipd">
                                         <input type="hidden" value="<?php echo $row['nama_siswa'] ?>" name="nama_siswa">
                                         <div class="row">
@@ -137,9 +138,9 @@ $json_spp = json_encode($spp);
                             </div>
                         </div>
                     </div>
-                    <!-- Modal akhir Edit -->
+                  <!-- Modal akhir Edit -->
 
-                    <!-- Modal Delete -->
+                  <!-- Modal Delete -->
                     <div class="modal fade" id="modaldelet<?php echo $row['nipd'] ?>" tabindex="-1"
                         aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-md modal-fullscreen-md-down">

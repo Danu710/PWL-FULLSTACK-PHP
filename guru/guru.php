@@ -127,15 +127,12 @@ while ($row = mysqli_fetch_assoc($query_guru)) {
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <form class="needs-validation" novalidate method="POST"
-                                        action="guru/proses_edit_guru.php">
-                                        <input type="hidden" value="<?php echo $row['nama_guru'] ?>" name="nama_guru">
+                                    <form class="needs-validation" novalidate method="POST" action="proses/proses_edit_guru.php">
+                                        <input type="hidden" value="<?php echo $row['nama_guru'] ?>" name="nama_guru_lama">
                                         <div class="row">
                                             <div class="col-lg-6">
                                                 <div class="form-floating mb-3">
-                                                    <input type="text" class="form-control" id="floatingInput"
-                                                        placeholder="nama" name="nama_guru" required
-                                                        value="<?php echo $row['nama_guru'] ?>">
+                                                    <input type="text" class="form-control" id="floatingInput" placeholder="nama" name="nama_guru_baru" required value="<?php echo $row['nama_guru'] ?>">
                                                     <label for="floatingInput">Nama</label>
                                                     <div class="invalid-feedback">
                                                         Masukan Nama
