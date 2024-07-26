@@ -44,7 +44,7 @@ $json_spp = json_encode($spp);
         <!-- Modal tambah Siswa baru -->
             <div class="row">
                 <div class="col d-flex justify-content-end">
-                   <a class="btn btn-primary" href="http://localhost:8080/simsditpweb/transaksi" role="button">Pembayaran SPP</a>
+                   <a class="btn btn-primary" href="https://simsditp.tech/transaksi" role="button">Pembayaran SPP</a>
                 </div>
             </div>
             <!-- akhir Modal tambah Siswa baru -->
@@ -64,6 +64,7 @@ $json_spp = json_encode($spp);
                                 <div class="modal-body">
                                     <form class="needs-validation" novalidate method="POST"
                                         action="proses/proses_edit_spp.php">
+                                        <input type="hidden" value="<?php echo $row['nipd'] ?>" name="nipd">
                                         <input type="hidden" value="<?php echo $row['nama_siswa'] ?>" name="nama_siswa">
                                         <div class="row">
                                             <div class="col-lg-4">
@@ -140,6 +141,7 @@ $json_spp = json_encode($spp);
                         </div>
                     </div>
                   <!-- Modal akhir Edit -->
+
                   <!-- Modal Delete -->
                     <div class="modal fade" id="modaldelet<?php echo $row['nipd'] ?>" tabindex="-1"
                         aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -154,11 +156,12 @@ $json_spp = json_encode($spp);
                                          action="proses/proses_hapus_spp.php">
                                         <input type="hidden" value="<?php echo $row['nipd'] ?>" name="nipd">
                                         Apakah Anda Ingin Menghapus Data Siswa yang bernama
-                                        <b><?php echo $row['nipd'] ?></b> ?
+                                        <b><?php echo $row['nama_siswa'] ?></b> ?
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary"
                                                 data-bs-dismiss="modal">Batal</button>
-                                            <button type="submit" class="btn btn-danger hapus" name="delete_spp_validate">Hapus</button>
+                                            <button type="submit" class="btn btn-danger hapus" name="hapus_spp_validate"
+                                                value="12345">Hapus</button>
                                         </div>
                                     </form>
                                 </div>

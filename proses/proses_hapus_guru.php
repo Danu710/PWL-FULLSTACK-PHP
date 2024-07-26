@@ -2,6 +2,8 @@
 session_start();
 include "connect.php";
 
+
+
 if (isset($_POST['hapus_guru_validate'])) {
     $nama_guru = $_POST['nama_guru'];
 
