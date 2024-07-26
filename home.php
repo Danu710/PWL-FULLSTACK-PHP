@@ -32,7 +32,7 @@ while ($row = mysqli_fetch_assoc($query)) {
 </head>
 
 <body>
-    <div class="col-lg-11 mt-2" style="margin-right:-300px">
+    <div class="col-lg-10 mt-2" style="margin-right:-300px">
         <div class="row row-cols-1 row-cols-md-4 g-3">
             <div class="col">
                 <div class="card" style="background-color: #478CCF; color: white;">

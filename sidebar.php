@@ -39,15 +39,15 @@
                                         <i class="bi bi-folder"></i> Master
                                     </a>
                                     <div class="dropdown-container"
-                                        style="<?php echo (isset($_GET['x']) && ($_GET['x'] == 'siswa' || $_GET['x'] == 'pegawai' || $_GET['x'] == 'mapel')) ? 'display: block;' : ''; ?>">
-                                        <a class="nav-link ps-3 <?php echo (isset($_GET['x']) && $_GET['x'] == 'siswa') ? 'active link-light' : 'link--bs-emphasis-color'; ?>"
-                                            href="siswa"><i class="bi bi-mortarboard"></i> Siswa</a>
-                                        <a class="nav-link ps-3 <?php echo (isset($_GET['x']) && $_GET['x'] == 'pegawai') ? 'active link-light' : 'link--bs-emphasis-color'; ?>"
-                                            href="pegawai"><i class="bi bi-person-lines-fill"></i> Pegawai</a>
-                                        <a class="nav-link ps-3 <?php echo (isset($_GET['x']) && $_GET['x'] == 'mapel') ? 'active link-light' : 'link--bs-emphasis-color'; ?>"
-                                            href="mapel"><i class="bi bi-book"></i> Mata Pelajaran</a>
-                                        <a class="nav-link ps-3 <?php echo (isset($_GET['x']) && $_GET['x'] == 'guru') ? 'active link-light' : 'link--bs-emphasis-color'; ?>"
-                                            href="guru"><i class="bi bi-person-square"></i> Guru</a>
+                                        style="<?php echo (isset($_GET['x']) && ($_GET['x'] == 'siswaa' || $_GET['x'] == 'pegawaii' || $_GET['x'] == 'mapell'|| $_GET['x'] == 'guruu')) ? 'display: block;' : ''; ?>">
+                                        <a class="nav-link ps-3 <?php echo (isset($_GET['x']) && $_GET['x'] == 'siswaa') ? 'active link-light' : 'link--bs-emphasis-color'; ?>"
+                                            href="siswaa"><i class="bi bi-mortarboard"></i> Siswa</a>
+                                        <a class="nav-link ps-3 <?php echo (isset($_GET['x']) && $_GET['x'] == 'pegawaii') ? 'active link-light' : 'link--bs-emphasis-color'; ?>"
+                                            href="pegawaii"><i class="bi bi-person-lines-fill"></i> Pegawai</a>
+                                        <a class="nav-link ps-3 <?php echo (isset($_GET['x']) && $_GET['x'] == 'mapell') ? 'active link-light' : 'link--bs-emphasis-color'; ?>"
+                                            href="mapell"><i class="bi bi-book"></i> Mata Pelajaran</a>
+                                        <a class="nav-link ps-3 <?php echo (isset($_GET['x']) && $_GET['x'] == 'guruu') ? 'active link-light' : 'link--bs-emphasis-color'; ?>"
+                                            href="guruu"><i class="bi bi-person-square"></i> Guru</a>
                                     </div>
                                 </li>
                             <?php } ?>
@@ -58,13 +58,13 @@
                                         <i class="bi bi-tags"></i> Transaksi
                                     </a>
                                     <div class="dropdown-container"
-                                        style="<?php echo (isset($_GET['x']) && ($_GET['x'] == 'spp' || $_GET['x'] == 'absen' || $_GET['x'] == 'nilai')) ? 'display: block;' : ''; ?>">
-                                        <a class="nav-link ps-3 <?php echo (isset($_GET['x']) && $_GET['x'] == 'spp') ? 'active link-light' : 'link--bs-emphasis-color'; ?>"
-                                            href="spp"><i class="bi bi-cash-stack"></i> SPP</a>
-                                        <a class="nav-link ps-3 <?php echo (isset($_GET['x']) && $_GET['x'] == 'absen') ? 'active link-light' : 'link--bs-emphasis-color'; ?>"
-                                            href="absen"><i class="bi bi-journal-check"></i> Absen</a>
-                                        <a class="nav-link ps-3 <?php echo (isset($_GET['x']) && $_GET['x'] == 'nilai') ? 'active link-light' : 'link--bs-emphasis-color'; ?>"
-                                            href="nilai"><i class="bi bi-file-earmark-bar-graph"></i> Nilai Siswa</a>
+                                        style="<?php echo (isset($_GET['x']) && ($_GET['x'] == 'spp1' || $_GET['x'] == 'absenn' || $_GET['x'] == 'nilaii')) ? 'display: block;' : ''; ?>">
+                                        <a class="nav-link ps-3 <?php echo (isset($_GET['x']) && $_GET['x'] == 'spp1') ? 'active link-light' : 'link--bs-emphasis-color'; ?>"
+                                            href="spp1"><i class="bi bi-cash-stack"></i> SPP</a>
+                                        <a class="nav-link ps-3 <?php echo (isset($_GET['x']) && $_GET['x'] == 'absenn') ? 'active link-light' : 'link--bs-emphasis-color'; ?>"
+                                            href="absenn"><i class="bi bi-journal-check"></i> Absen</a>
+                                        <a class="nav-link ps-3 <?php echo (isset($_GET['x']) && $_GET['x'] == 'nilaii') ? 'active link-light' : 'link--bs-emphasis-color'; ?>"
+                                            href="nilaii"><i class="bi bi-file-earmark-bar-graph"></i> Nilai Siswa</a>
                                     </div>
                                 </li>
                             <?php } ?>
@@ -85,8 +85,8 @@
 
                         <?php if (!empty($hasil) && isset($hasil['level']) && $hasil['level'] == 1) { ?>
                             <li class="nav-item">
-                                <a class="nav-link ps-2 <?php echo (isset($_GET['x']) && $_GET['x'] == 'report') ? 'active link-light' : 'link--bs-emphasis-color'; ?>"
-                                    href="report">
+                                <a class="nav-link ps-2 <?php echo (isset($_GET['x']) && $_GET['x'] == 'reportt') ? 'active link-light' : 'link--bs-emphasis-color'; ?>"
+                                    href="reportt">
                                     <i class="bi bi-clipboard-data"></i> Report
                                 </a>
                             </li>
@@ -94,8 +94,8 @@
 
                         <?php if (!empty($hasil) && isset($hasil['level']) && $hasil['level'] == 1) { ?>
                             <li class="nav-item">
-                                <a class="nav-link ps-2 <?php echo (isset($_GET['x']) && $_GET['x'] == 'about') ? 'active link-light' : 'link--bs-emphasis-color'; ?>"
-                                    href="about">
+                                <a class="nav-link ps-2 <?php echo (isset($_GET['x']) && $_GET['x'] == 'aboutt') ? 'active link-light' : 'link--bs-emphasis-color'; ?>"
+                                    href="aboutt">
                                     <i class="bi bi-file-earmark-person-fill"></i> About Us
                                 </a>
                             </li>
@@ -111,7 +111,7 @@
                             <ul class="dropdown-menu dropdown-menu-start mt-3">
                                 <?php if ($hasil['level'] == 1) { ?>
                                     <li>
-                                        <a class="dropdown-item sidebar" href="user"><i class="bi bi-person-fill-gear"></i> User</a>
+                                        <a class="dropdown-item sidebar" href="userr"><i class="bi bi-person-fill-gear"></i> User</a>
                                     </li>
                                 <?php } ?>
                                 <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
