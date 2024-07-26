@@ -1,25 +1,26 @@
-<!-- hapus guru -->
 <?php
 session_start();
 include "connect.php";
 
-$nama_guru = (isset($_POST['nama_guru'])) ? htmlentities($_POST['nama_guru']) : "";
+if (isset($_POST['hapus_guru_validate'])) {
+    $nama_guru = $_POST['nama_guru'];
 
-if (!empty($_POST['hapus_guru_validate'])) {
-    $query = mysqli_query($conn, "DELETE FROM guru WHERE nama_guru='$nama_guru'");
-    if (!$query) {
+    $query = "DELETE FROM guru WHERE nama_guru='$nama_guru'";
+    if (mysqli_query($conn, $query)) {
         $_SESSION['message'] = [
-            'title' => 'Data Gagal Dihapus',
-            'icon' => 'error'
-        ];
-        header('Location: ../guru');
-    } else {
-        $_SESSION['message'] = [
-            'title' => 'Data Berhasil Dihapus',
+            'title' => 'Berhasil!',
+            'text' => 'Data guru berhasil dihapus.',
             'icon' => 'success'
         ];
-        header('Location: ../guru');
+    } else {
+        $_SESSION['message'] = [
+            'title' => 'Gagal!',
+            'text' => 'Data guru gagal dihapus: ' . mysqli_error($conn),
+            'icon' => 'error'
+        ];
     }
 }
+
+header("Location: ../index.php");
+exit();
 ?>
-<!-- akhir hapus guru -->
