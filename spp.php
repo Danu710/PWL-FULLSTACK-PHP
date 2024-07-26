@@ -214,8 +214,8 @@ $json_spp = json_encode($spp);
                                     <td>
                                         <?php echo $row['tanggal'] ?>
                                     </td>
-                                    <td>
-                                        <?php echo $row['trasaction_status'] ?>
+                                    <td style="text-align:center">
+                                        <?php echo $row['transaction_status'] ?>
                                     </td>
                                     <td class="d-flex" style="justify-content: center">
                                         <button class="btn btn-warning btn-sm me-1" data-bs-toggle="modal"
