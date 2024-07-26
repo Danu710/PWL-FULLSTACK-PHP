@@ -7,7 +7,7 @@ namespace Midtrans;
 
 require_once dirname(__FILE__) . '/../Midtrans.php';
 Config::$isProduction = false;
-Config::$serverKey = '<your server key>';
+Config::$serverKey = 'SB-Mid-server-2w91qGKaKFF8JCCQIyyYZEiV';
 
 // non-relevant function only used for demo/example purpose
 printExampleWarningMessage();
@@ -21,37 +21,29 @@ catch (\Exception $e) {
 
 $notif = $notif->getResponse();
 $transaction = $notif->transaction_status;
+$transaction_id = $notif->transaction_id;
+
 $type = $notif->payment_type;
 $order_id = $notif->order_id;
 $fraud = $notif->fraud_status;
 
-if ($transaction == 'capture') {
-    // For credit card transaction, we need to check whether transaction is challenge by FDS or not
-    if ($type == 'credit_card') {
-        if ($fraud == 'challenge') {
-            // TODO set payment status in merchant's database to 'Challenge by FDS'
-            // TODO merchant should decide whether this transaction is authorized or not in MAP
-            echo "Transaction order_id: " . $order_id ." is challenged by FDS";
-        } else {
-            // TODO set payment status in merchant's database to 'Success'
-            echo "Transaction order_id: " . $order_id ." successfully captured using " . $type;
-        }
-    }
-} else if ($transaction == 'settlement') {
-    // TODO set payment status in merchant's database to 'Settlement'
-    echo "Transaction order_id: " . $order_id ." successfully transfered using " . $type;
+if ($transaction == 'settlement') {
+   include "koneksi.php";
+   mysqli_query($koneksi,"update peserta set transaction_status='3' , transaction_id='$transaction_id' where order_id='$order_id'");
 } else if ($transaction == 'pending') {
-    // TODO set payment status in merchant's database to 'Pending'
-    echo "Waiting customer to finish transaction order_id: " . $order_id . " using " . $type;
+       include "koneksi.php";
+   mysqli_query($koneksi,"update peserta set transaction_status='2' where order_id='$order_id'");
+ 
 } else if ($transaction == 'deny') {
-    // TODO set payment status in merchant's database to 'Denied'
-    echo "Payment using " . $type . " for transaction order_id: " . $order_id . " is denied.";
+      include "koneksi.php";
+   mysqli_query($koneksi,"update peserta set transaction_status='1' where order_id='$order_id'");
 } else if ($transaction == 'expire') {
-    // TODO set payment status in merchant's database to 'expire'
-    echo "Payment using " . $type . " for transaction order_id: " . $order_id . " is expired.";
+       include "koneksi.php";
+   mysqli_query($koneksi,"update peserta set transaction_status='1' where order_id='$order_id'");
 } else if ($transaction == 'cancel') {
-    // TODO set payment status in merchant's database to 'Denied'
-    echo "Payment using " . $type . " for transaction order_id: " . $order_id . " is canceled.";
+     include "koneksi.php";
+   mysqli_query($koneksi,"update peserta set transaction_status='1' where order_id='$order_id'");
+ 
 }
 
 function printExampleWarningMessage() {
@@ -64,7 +56,7 @@ function printExampleWarningMessage() {
         echo "In file: " . __FILE__;
         echo "<br>";
         echo "<br>";
-        echo htmlspecialchars('Config::$serverKey = \'<your server key>\';');
+        echo htmlspecialchars('Config::$serverKey = \'<Server Key>\';');
         die();
     }   
 }
