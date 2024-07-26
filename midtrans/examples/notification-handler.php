@@ -29,20 +29,20 @@ $fraud = $notif->fraud_status;
 
 if ($transaction == 'settlement') {
    include "koneksi.php";
-   mysqli_query($koneksi,"update peserta set transaction_status='3' , transaction_id='$transaction_id' where order_id='$order_id'");
+   mysqli_query($koneksi,"update spp set transaction_status='3' , transaction_id='$transaction_id' where order_id='$order_id'");
 } else if ($transaction == 'pending') {
        include "koneksi.php";
-   mysqli_query($koneksi,"update peserta set transaction_status='2' where order_id='$order_id'");
+   mysqli_query($koneksi,"update spp set transaction_status='2' where order_id='$order_id'");
  
 } else if ($transaction == 'deny') {
       include "koneksi.php";
-   mysqli_query($koneksi,"update peserta set transaction_status='1' where order_id='$order_id'");
+   mysqli_query($koneksi,"update spp set transaction_status='1' where order_id='$order_id'");
 } else if ($transaction == 'expire') {
        include "koneksi.php";
-   mysqli_query($koneksi,"update peserta set transaction_status='1' where order_id='$order_id'");
+   mysqli_query($koneksi,"update spp set transaction_status='1' where order_id='$order_id'");
 } else if ($transaction == 'cancel') {
      include "koneksi.php";
-   mysqli_query($koneksi,"update peserta set transaction_status='1' where order_id='$order_id'");
+   mysqli_query($koneksi,"update spp set transaction_status='1' where order_id='$order_id'");
  
 }
 

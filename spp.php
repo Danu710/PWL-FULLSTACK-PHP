@@ -106,15 +106,15 @@ $json_spp = json_encode($spp);
                                             </div>
                                             <div class="col-lg-4">
                                                 <div class="form-floating mb-3">
-                                                    <select class="form-select" name="status" id="status" required>
+                                                    <select class="form-select" name="transaction_status" id="transaction_status" required>
                                                         <?php foreach ($spp as $k): ?>
-                                                            <option value="<?php echo $k['status']; ?>" <?php echo ($row['status'] == $k['status']) ? 'selected' : ''; ?>>
-                                                                <?php echo $k['status']; ?>
+                                                            <option value="<?php echo $k['transaction_status']; ?>" <?php echo ($row['transaction_status'] == $k['transaction_status']) ? 'selected' : ''; ?>>
+                                                                <?php echo $k['transaction_status']; ?>
                                                             </option>
                                                         <?php endforeach; ?>
                                                     </select>
-                                                    <label for="kelas">Status</label>
-                                                    <div class="invalid-feedback">Status</div>
+                                                    <label for="kelas">transaction_status</label>
+                                                    <div class="invalid-feedback">transaction_status</div>
                                                 </div>
                                             </div>
                                             <div class="col-lg-4">
