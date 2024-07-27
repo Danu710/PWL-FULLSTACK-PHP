@@ -186,7 +186,7 @@
                 </div>
                 <div class="col-md-3 mt-4">
                     <div class="card" style="width: 14rem;">
-                        <img src="assets/img/man.png" class="card-img-top" alt="...">
+                        <img src="assets/img/fauzan.jpeg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title" style="text-align:center">MUHAMMAD FAUZAN SAPUTRA</h5>
                             <h5 class="card-title" style="text-align:center">202143500586</h5>
