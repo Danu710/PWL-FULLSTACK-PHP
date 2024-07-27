@@ -4,17 +4,17 @@ session_start();
 if (isset($_GET['x']) && $_GET['x'] == 'home') {
     $page = "home.php";
     include "main.php";
-} elseif (isset($_GET['x']) && $_GET['x'] == 'user') {
+} elseif (isset($_GET['x']) && $_GET['x'] == 'userr') {
     if ($_SESSION['level_simsditp'] == 1) {
-        $page = "user.php";
+        $page = "user/user.php";
         include "main.php";
     } else {
         $page = "home.php";
         include "main.php";
     }
-} elseif (isset($_GET['x']) && $_GET['x'] == 'report') {
+} elseif (isset($_GET['x']) && $_GET['x'] == 'reportt') {
     if ($_SESSION['level_simsditp'] == 1) {
-        $page = "report.php";
+        $page = "report/report.php";
         include "main.php";
     } else {
         $page = "home.php";
@@ -43,74 +43,82 @@ if (isset($_GET['x']) && $_GET['x'] == 'home') {
         $page = "home.php";
         include "main.php";
     }
-} elseif (isset($_GET['x']) && $_GET['x'] == 'siswa') {
+} elseif (isset($_GET['x']) && $_GET['x'] == 'siswaa') {
     if ($_SESSION['level_simsditp'] == 1) {
-        $page = "siswa.php";
+        $page = "siswa/siswa.php";
         include "main.php";
     } else {
         $page = "home.php";
         include "main.php";
     }
-} elseif (isset($_GET['x']) && $_GET['x'] == 'pegawai') {
+} elseif (isset($_GET['x']) && $_GET['x'] == 'pegawaii') {
     if ($_SESSION['level_simsditp'] == 1) {
-        $page = "pegawai.php";
+        $page = "pegawai/pegawai.php";
         include "main.php";
     } else {
         $page = "home.php";
         include "main.php";
     }
-} elseif (isset($_GET['x']) && $_GET['x'] == 'mapel') {
+} elseif (isset($_GET['x']) && $_GET['x'] == 'mapell') {
     if ($_SESSION['level_simsditp'] == 1) {
-        $page = "mapel.php";
+        $page = "mapel/mapel.php";
+        include "main.php";
+    } else {
+        $page = "home.php";
+        include "main.php";
+    }
+} elseif (isset($_GET['x']) && $_GET['x'] == 'guruu') {
+    if ($_SESSION['level_simsditp'] == 1) {
+        $page = "guru/guru.php";
         include "main.php";
     } else {
         $page = "home.php";
         include "main.php";
     }
 
-} elseif (isset($_GET['x']) && $_GET['x'] == 'absen') {
+} elseif (isset($_GET['x']) && $_GET['x'] == 'absenn') {
     if ($_SESSION['level_simsditp'] == 1 || $_SESSION['level_simsditp'] == 2) {
-        $page = "absen.php";
+        $page = "absen/absen.php";
         include "main.php";
     } else {
         $page = "home.php";
         include "main.php";
     }
-} elseif (isset($_GET['x']) && $_GET['x'] == 'spp') {
+} elseif (isset($_GET['x']) && $_GET['x'] == 'spp1') {
     if ($_SESSION['level_simsditp'] == 1 || $_SESSION['level_simsditp'] == 2) {
-        $page = "spp.php";
+        $page = "spp/spp.php";
         include "main.php";
     } else {
         $page = "home.php";
         include "main.php";
     }
-} elseif (isset($_GET['x']) && $_GET['x'] == 'transaksi') {
-    if ($_SESSION['level_simsditp'] == 1 || $_SESSION['level_simsditp'] == 2) {
-        $page = "transaksi.php";
+} elseif (isset($_GET['x']) && $_GET['x'] == 'transaksii') {
+    if ($_SESSION['level_simsditp'] == 1) {
+        $page = "spp/transaksi_spp.php";
         include "main.php";
     } else {
         $page = "home.php";
         include "main.php";
     }
-} elseif (isset($_GET['x']) && $_GET['x'] == 'nilai') {
+} elseif (isset($_GET['x']) && $_GET['x'] == 'nilaii') {
     if ($_SESSION['level_simsditp'] == 1 || $_SESSION['level_simsditp'] == 2) {
-        $page = "nilai_siswa.php";
+        $page = "nilai/nilai_siswa.php";
         include "main.php";
     } else {
         $page = "home.php";
         include "main.php";
     }
-} elseif (isset($_GET['x']) && $_GET['x'] == 'about') {
+} elseif (isset($_GET['x']) && $_GET['x'] == 'aboutt') {
     if ($_SESSION['level_simsditp'] == 1 || $_SESSION['level_simsditp'] == 2) {
-        $page = "about_us.php";
+        $page = "about_us/about_us.php";
         include "main.php";
     } else {
         $page = "home.php";
         include "main.php";
     }
-} elseif (isset($_GET['x']) && $_GET['x'] == 'guru') {
+} elseif (isset($_GET['x']) && $_GET['x'] == 'guruu') {
     if ($_SESSION['level_simsditp'] == 1 || $_SESSION['level_simsditp'] == 2) {
-        $page = "guru.php";
+        $page = "guru/guru.php";
         include "main.php";
     } else {
         $page = "home.php";
