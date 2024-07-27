@@ -4,7 +4,7 @@
             Halaman Transaki
         </div>
         <div class="card-body">
-            <form action="proses/proses_tambah_spp.php" method="POST">
+            <form action="spp/proses_tambah_spp.php" method="POST">
                   <div>
                     <label for="nipd">NIPD:</label>
                     <input class="form-control" type="text" id="nipd" name="nipd" required>
