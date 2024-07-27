@@ -22,16 +22,19 @@
                                         <img src="assets/img/plus.svg" class="expand-icon" alt="Plus">
                                     </summary>
                                     <div class="faq-content" style="font-size:15px">
-                                        - membuat form login <br>
-                                        - membuat dashboard <br>
-                                        - membuat sidebar <br>
-                                        - membuat crud siswa <br>
-                                        - membuat crud pegawai <br>
-                                        - membuat crud mapel <br>
+                                        <ul>
+                                            <li>membuat desain aplikasi</li>
+                                            <li>⁠membuat form login</li>
+                                            <li>⁠membuat Konten dashboard</li>
+                                            <li>⁠membuat Crud Siswa</li>
+                                            <li>⁠membuat Crud Back End Pegawai</li>
+                                            <li>⁠membuat Crud Mapel</li>
+                                            <li>⁠membuat fitur dark mode</li>
+                                        </ul>
                                     </div>
                                 </details>
                             </div>
-                            <a href="http://tugasku.rf.gd/biodata.php" class="btn btn-primary"
+                            <a target="_blank" href="http://tugasku.rf.gd/biodata.php" class="btn btn-primary"
                                 style=" display: flex;justify-content: center;">Tugasku</a>
                         </div>
                     </div>
@@ -51,13 +54,18 @@
                                         <img src="assets/img/plus.svg" class="expand-icon" alt="Plus">
                                     </summary>
                                     <div class="faq-content" style="font-size:15px">
-                                        - membuat form login <br>
-                                        - membuat dashboard <br>
-                                        - membuat sidebar
+                                        <ul>
+                                            <li>report data siswa</li>
+                                            <li>⁠report data pegawai</li>
+                                            <li>⁠report data absen</li>
+                                            <li>⁠report data spp</li>
+                                            <li>⁠report data mapel</li>
+                                            <li>⁠Back end absen</li>
+                                        </ul>
                                     </div>
                                 </details>
                             </div>
-                            <a href="http://abay.rf.gd/index.php" class="btn btn-primary"
+                            <a target="_blank" href="http://abay.rf.gd/index.php" class="btn btn-primary"
                                 style=" display: flex;justify-content: center;">Tugasku</a>
                         </div>
                     </div>
@@ -77,13 +85,13 @@
                                         <img src="assets/img/plus.svg" class="expand-icon" alt="Plus">
                                     </summary>
                                     <div class="faq-content" style="font-size:15px">
-                                        - membuat form login <br>
-                                        - membuat dashboard <br>
-                                        - membuat sidebar
+                                        <ul>
+                                            <li>membuat front end Absen</li>
+                                        </ul>
                                     </div>
                                 </details>
                             </div>
-                            <a href="http://tugasguntur.rf.gd/biodata.php" class="btn btn-primary"
+                            <a target="_blank" href="http://tugasguntur.rf.gd/biodata.php" class="btn btn-primary"
                                 style=" display: flex;justify-content: center;">Tugasku</a>
                         </div>
                     </div>
@@ -103,13 +111,16 @@
                                         <img src="assets/img/plus.svg" class="expand-icon" alt="Plus">
                                     </summary>
                                     <div class="faq-content" style="font-size:15px">
-                                        - membuat crud guru <br>
-                                        - membuat dashboard <br>
-                                        - membuat sidebar
+                                        <ul>
+                                            <li>Membuat crud guru</li>
+                                            <li>Membuat dashboard</li>
+                                            <li>Membuat sidebar</li>
+                                            <li>Push and pull request repository github</li>
+                                        </ul>
                                     </div>
                                 </details>
                             </div>
-                            <a href="http://tugas.rf.gd/Index.php" class="btn btn-primary"
+                            <a target="_blank" href="http://tugas.rf.gd/Index.php" class="btn btn-primary"
                                 style=" display: flex;justify-content: center;">Tugasku</a>
                         </div>
                     </div>
@@ -129,13 +140,13 @@
                                         <img src="assets/img/plus.svg" class="expand-icon" alt="Plus">
                                     </summary>
                                     <div class="faq-content" style="font-size:15px">
-                                        - membuat form login <br>
-                                        - membuat dashboard <br>
-                                        - membuat sidebar
+                                        <ul>
+                                            <li>membuat front end pegawai</li>
+                                        </ul>
                                     </div>
                                 </details>
                             </div>
-                            <a href="http://tugasramos.rf.gd/202143500563_biodata.php" class="btn btn-primary"
+                            <a target="_blank" href="http://tugasramos.rf.gd/202143500563_biodata.php" class="btn btn-primary"
                                 style=" display: flex;justify-content: center;">Tugasku</a>
                         </div>
                     </div>
@@ -155,13 +166,20 @@
                                         <img src="assets/img/plus.svg" class="expand-icon" alt="Plus">
                                     </summary>
                                     <div class="faq-content" style="font-size:15px">
-                                        - membuat form login <br>
-                                        - membuat dashboard <br>
-                                        - membuat sidebar
+                                        <ul>
+                                            <li>get data spp</li>
+                                            <li>⁠edit data spp</li>
+                                            <li>⁠delete data spp</li>
+                                            <li>⁠payment online with midtrans</li>
+                                            <li>⁠configure account GitHub</li>
+                                            <li>⁠Fixing Branch GitHub error and conflict</li>
+                                            <li>⁠Hosting web to Hostinger update on GitHub</li>
+                                            <li>⁠Enable Database to realtime with Hostinger</li>
+                                        </ul>
                                     </div>
                                 </details>
                             </div>
-                            <a href="http://tugasdanu.rf.gd" class="btn btn-primary"
+                            <a target="_blank" href="http://tugasdanu.rf.gd" class="btn btn-primary"
                                 style=" display: flex;justify-content: center;">Tugasku</a>
                         </div>
                     </div>
@@ -181,13 +199,16 @@
                                         <img src="assets/img/plus.svg" class="expand-icon" alt="Plus">
                                     </summary>
                                     <div class="faq-content" style="font-size:15px">
-                                        - membuat form login <br>
-                                        - membuat dashboard <br>
-                                        - membuat sidebar
+                                        <ul>
+                                            <li>Get Data list siswa</li>
+                                            <li>Add filter by kelas</li>
+                                            <li>Page penilaian</li>
+                                            <li>Backend penilaian</li>
+                                        </ul>
                                     </div>
                                 </details>
                             </div>
-                            <a href="http://tugasku.rf.gd/biodata.php" class="btn btn-primary"
+                            <a target="_blank" href="http://tugasfauzan.rf.gd/" class="btn btn-primary"
                                 style=" display: flex;justify-content: center;">Tugasku</a>
                         </div>
                     </div>
