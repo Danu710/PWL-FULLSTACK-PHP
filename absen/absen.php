@@ -45,7 +45,7 @@
                         <div class="col-md-8">
                             <h3>Pilih Kelas</h3>
                             <select name="kelas" class="form-control">
-                                <option value="">Pilih Kelas</option>
+                                <option value="">Silahkan Pilih Kelas Terlebih Dahulu</option>
                                 <option value="1 A">Kelas 1 A</option>
                                 <option value="1 B">Kelas 1 B</option>
                                 <option value="2 A">Kelas 2 A</option>
@@ -85,7 +85,7 @@
                             $result = $stmt->get_result();
 
                             if ($result->num_rows > 0) {
-                                echo '<form method="POST" action="absen/update_presensi.php">';
+                                echo '<form method="POST" action="absen/proses_presensi.php">';
                                 echo '<input type="hidden" name="kelas" value="' . htmlspecialchars($kelas) . '">';
                                 echo '<div class="table-responsive">';
                                 echo '<table class="table table-bordered mt-3">';
@@ -128,7 +128,7 @@
                             $result = $stmt->get_result();
                         
                             if ($result->num_rows > 0) {
-                                echo '<form method="POST" action="absen/update_presensi.php">';
+                                echo '<form method="POST" action="absen/proses_edit_presensi.php">';
                                 echo '<input type="hidden" name="kelas" value="' . htmlspecialchars($kelas) . '">';
                                 echo '<div class="table-responsive">';
                                 echo '<table class="table table-bordered mt-3">';

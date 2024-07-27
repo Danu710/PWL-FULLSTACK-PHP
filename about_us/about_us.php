@@ -40,7 +40,7 @@
                     <div class="card" style="width: 14rem;">
                         <img src="assets/img/wahyu.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title" style="text-align:center">Wahyu Aji Nur Pratama</h5>
+                            <h5 class="card-title" style="text-align:center">WAHYU AJI NUR PRATAMA</h5>
                             <h5 class="card-title" style="text-align:center">202143500619</h5>
                             <div class="faq-container mb-3">
                                 <details>
@@ -92,7 +92,7 @@
                     <div class="card" style="width: 14rem;">
                         <img src="assets/img/lucky.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title" style="text-align:center">Lucky Aditya Pratama</h5>
+                            <h5 class="card-title" style="text-align:center">LUCKY ADITYA PRATAMA</h5>
                             <h5 class="card-title" style="text-align:center">202143500565</h5>
                             <div class="faq-container mb-3">
                                 <details>
@@ -103,7 +103,7 @@
                                         <img src="assets/img/plus.svg" class="expand-icon" alt="Plus">
                                     </summary>
                                     <div class="faq-content" style="font-size:15px">
-                                        - membuat form login <br>
+                                        - membuat crud guru <br>
                                         - membuat dashboard <br>
                                         - membuat sidebar
                                     </div>
@@ -118,7 +118,7 @@
                     <div class="card" style="width: 14rem;">
                         <img src="assets/img/ramos.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title" style="text-align:center">Ramos Romora Simarmata</h5>
+                            <h5 class="card-title" style="text-align:center">RAMOS ROMORA SIMARMATA</h5>
                             <h5 class="card-title" style="text-align:center">202143500563</h5>
                             <div class="faq-container mb-3">
                                 <details>
@@ -144,7 +144,7 @@
                     <div class="card" style="width: 14rem;">
                         <img src="assets/img/danu.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title" style="text-align:center">Ramadhanu Kadir R</h5><br>
+                            <h5 class="card-title" style="text-align:center">RAMADHANU KADIR R</h5><br>
                             <h5 class="card-title" style="text-align:center">202143500569</h5>
                             <div class="faq-container mb-3">
                                 <details>
@@ -170,7 +170,7 @@
                     <div class="card" style="width: 14rem;">
                         <img src="assets/img/man.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title" style="text-align:center">Muhammad Fauzan Saputra</h5>
+                            <h5 class="card-title" style="text-align:center">MUHAMMAD FAUZAN SAPUTRA</h5>
                             <h5 class="card-title" style="text-align:center">202143500586</h5>
                             <div class="faq-container mb-3">
                                 <details>
