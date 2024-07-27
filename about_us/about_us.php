@@ -113,8 +113,6 @@
                                     <div class="faq-content" style="font-size:15px">
                                         <ul>
                                             <li>Membuat crud guru</li>
-                                            <li>Membuat dashboard</li>
-                                            <li>Membuat sidebar</li>
                                             <li>Push and pull request repository github</li>
                                         </ul>
                                     </div>
