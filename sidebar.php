@@ -58,7 +58,7 @@
                                         <i class="bi bi-tags"></i> Transaksi
                                     </a>
                                     <div class="dropdown-container"
-                                        style="<?php echo (isset($_GET['x']) && ($_GET['x'] == 'spp1' || $_GET['x'] == 'absenn' || $_GET['x'] == 'nilaii')) ? 'display: block;' : ''; ?>">
+                                        style="<?php echo (isset($_GET['x']) && ($_GET['x'] == 'spp1' || $_GET['x'] == 'absenn' || $_GET['x'] == 'nilai')) ? 'display: block;' : ''; ?>">
                                         <a class="nav-link ps-3 <?php echo (isset($_GET['x']) && $_GET['x'] == 'spp1') ? 'active link-light' : 'link--bs-emphasis-color'; ?>"
                                             href="spp1"><i class="bi bi-cash-stack"></i> SPP</a>
                                         <a class="nav-link ps-3 <?php echo (isset($_GET['x']) && $_GET['x'] == 'absenn') ? 'active link-light' : 'link--bs-emphasis-color'; ?>"
