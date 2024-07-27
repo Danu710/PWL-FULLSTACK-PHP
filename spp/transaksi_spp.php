@@ -26,7 +26,7 @@
                     <input class="form-control" type="text" id="bayar" name="bayar" required>
                   </div>
                   <div>
-                  <button  type="submit" class="btn btn-primary mt-3">Bayar</button>
+                  <button  type="submit" name="tambah_spp_validate" class="btn btn-primary mt-3">Bayar</button>
         </div>
     </form>
         </div>

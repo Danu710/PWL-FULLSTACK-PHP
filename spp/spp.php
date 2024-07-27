@@ -61,7 +61,7 @@ $json_spp = json_encode($spp);
                                 </div>
                                 <div class="modal-body">
                                     <form class="needs-validation" novalidate method="POST"
-                                        action="proses/proses_edit_spp.php">
+                                        action="spp/proses_edit_spp.php">
                                         <input type="hidden" value="<?php echo $row['nipd'] ?>" name="nipd">
                                         <input type="hidden" value="<?php echo $row['nama_siswa'] ?>" name="nama_siswa">
                                         <div class="row">
