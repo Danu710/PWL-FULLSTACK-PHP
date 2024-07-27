@@ -144,7 +144,7 @@
                     <div class="card" style="width: 14rem;">
                         <img src="assets/img/danu.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title" style="text-align:center">RAMADHANU KADIR R</h5><br>
+                            <h5 class="card-title" style="text-align:center">RAMADHANU KADIR R</h5>
                             <h5 class="card-title" style="text-align:center">202143500569</h5>
                             <div class="faq-container mb-3">
                                 <details>
@@ -161,7 +161,7 @@
                                     </div>
                                 </details>
                             </div>
-                            <a href="http://tugasku.rf.gd/biodata.php" class="btn btn-primary"
+                            <a href="http://tugasdanu.rf.gd" class="btn btn-primary"
                                 style=" display: flex;justify-content: center;">Tugasku</a>
                         </div>
                     </div>
