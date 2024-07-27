@@ -28,7 +28,7 @@ $records = mysqli_fetch_array($query);
                         <i class="bi bi-brightness-high-fill theme-icon-active"
                             data-theme-icon-active="bi-brightness-high-fill"></i>
                     </button>
-                    <ul class="dropdown-menu dropdown-menu-start mt-3 rounded"
+                    <ul class="dropdown-menu dropdown-menu-end mt-3 rounded"
                         aria-labelledby="dropdownMenuButtonLight">
                         <li>
                             <button class="dropdown-item d-flex align-items-center" type="button"

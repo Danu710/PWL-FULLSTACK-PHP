@@ -45,7 +45,7 @@ $hasil = mysqli_fetch_array($query);
             <!-- End Content -->
         </div>
         <div class="fixed-bottom text-center py-2"
-            style=" background-color: var(--bs-body-bg); color-interpolation-filters: #bd-theme-text; ">
+            style=" background-color: var(--bs-body-bg); color-interpolation-filters: bd-theme-text; ">
             Copyright 2024
         </div>
     </div>
