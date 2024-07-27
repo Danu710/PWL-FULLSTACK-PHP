@@ -63,7 +63,7 @@
                                             href="spp1"><i class="bi bi-cash-stack"></i> SPP</a>
                                         <a class="nav-link ps-3 <?php echo (isset($_GET['x']) && $_GET['x'] == 'absenn') ? 'active link-light' : 'link--bs-emphasis-color'; ?>"
                                             href="absenn"><i class="bi bi-journal-check"></i> Absen</a>
-                                        <a class="nav-link ps-3 <?php echo (isset($_GET['x']) && $_GET['x'] == 'nilaii') ? 'active link-light' : 'link--bs-emphasis-color'; ?>"
+                                        <a class="nav-link ps-3 <?php echo (isset($_GET['x']) && $_GET['x'] == 'nilai') ? 'active link-light' : 'link--bs-emphasis-color'; ?>"
                                             href="nilai"><i class="bi bi-file-earmark-bar-graph"></i> Nilai Siswa</a>
                                     </div>
                                 </li>
