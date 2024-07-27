@@ -1,6 +1,6 @@
 <?php
 session_start();
-include "connect.php";
+include "../proses/connect.php";
 
 try {
     $id_mapel = (isset($_POST['id_mapel'])) ? $_POST['id_mapel'] : [];
@@ -18,15 +18,15 @@ try {
 
     //delete nilai
     mysqli_query($conn, "DELETE FROM nilai WHERE siswa_id = '$id_siswa'");
-
+    
     //insert nilai
     foreach ($id_mapel as $value) {
         $mapel = $nilai_mapel[$value] ?? 0;
         $tugas = $nilai_tugas[$value] ?? 0;
         $uts = $nilai_uts[$value] ?? 0;
         $uas = $nilai_uas[$value] ?? 0;
-        $cat = $catatan[$value] ?? null;
-        $q = mysqli_query($conn, "INSERT INTO nilai (mapel_id, siswa_id, semester, tahun_ajaran, nilai_mapel, nilai_tugas, nilai_uts, nilai_uas, predikat_sikap, predikat_keterampilan, predikat_kompetensi, catatan) VALUES ('$value', '$id_siswa', '$semester', '$tahun_ajaran', '$mapel', '$tugas', '$uts', '$uas', '$predikat_sikap', '$predikat_keterampilan', '$predikat_kompetensi', '$cat')");
+        $cat = $catatan[$value] ?? "";
+        mysqli_query($conn, "INSERT INTO nilai (mapel_id, siswa_id, semester, tahun_ajaran, nilai_mapel, nilai_tugas, nilai_uts, nilai_uas, predikat_sikap, predikat_keterampilan, predikat_kompetensi, catatan) VALUES ('$value', '$id_siswa', '$semester', '$tahun_ajaran', '$mapel', '$tugas', '$uts', '$uas', '$predikat_sikap', '$predikat_keterampilan', '$predikat_kompetensi', '$cat')");
     }
     
     $_SESSION['message'] = [

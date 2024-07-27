@@ -42,7 +42,7 @@ $predikat = [
 </script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.css">
-<div class="col-lg-11 mt-2" style="margin-right:-320px">
+<div class="col-lg-10 mt-2" style="margin-right:-320px">
 
     <a href="nilai" class="btn btn-primary">Kembali</a>
     <div class="card">
@@ -52,7 +52,7 @@ $predikat = [
         <div class="card-body">
 
             <div class="container my-5">
-                <form action="proses/proses_penilaian.php" method="POST">
+                <form action="module_nilai/proses_penilaian.php" method="POST">
                     <input type="hidden" name="id_siswa" value="<?= $id_siswa; ?>">
                     <div class="row mb-3">
                         <div class="col">

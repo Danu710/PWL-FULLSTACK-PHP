@@ -100,9 +100,9 @@ if (isset($_GET['x']) && $_GET['x'] == 'home') {
         $page = "home.php";
         include "main.php";
     }
-} elseif (isset($_GET['x']) && $_GET['x'] == 'nilaii') {
+} elseif (isset($_GET['x']) && $_GET['x'] == 'nilai') {
     if ($_SESSION['level_simsditp'] == 1 || $_SESSION['level_simsditp'] == 2) {
-        $page = "nilai/nilai_siswa.php";
+        $page = "module_nilai/nilai_siswa.php";
         include "main.php";
     } else {
         $page = "home.php";
