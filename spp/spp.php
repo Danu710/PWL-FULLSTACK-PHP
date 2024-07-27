@@ -4,7 +4,7 @@ $query = mysqli_query($conn, "SELECT * FROM spp");
 while ($record = mysqli_fetch_array($query)) {
     $result[] = $record;
 }
-$query_spp = mysqli_query($conn, "SELECT nipd, nama_siswa, kelas, bulan, bayar, status FROM spp");
+$query_spp = mysqli_query($conn, "SELECT nipd, nama_siswa, kelas, bulan, bayar, transaction_status FROM spp");
 
 
 $spp = [];
@@ -104,15 +104,15 @@ $json_spp = json_encode($spp);
                                             </div>
                                             <div class="col-lg-4">
                                                 <div class="form-floating mb-3">
-                                                    <select class="form-select" name="status" id="status" required>
+                                                    <select class="form-select" name="transaction_status" id="transaction_status" required>
                                                         <?php foreach ($spp as $k): ?>
-                                                            <option value="<?php echo $k['status']; ?>" <?php echo ($row['status'] == $k['status']) ? 'selected' : ''; ?>>
-                                                                <?php echo $k['status']; ?>
+                                                            <option value="<?php echo $k['transaction_status']; ?>" <?php echo ($row['transaction_status'] == $k['transaction_status']) ? 'selected' : ''; ?>>
+                                                                <?php echo $k['transaction_status']; ?>
                                                             </option>
                                                         <?php endforeach; ?>
                                                     </select>
-                                                    <label for="kelas">Status</label>
-                                                    <div class="invalid-feedback">Status</div>
+                                                    <label for="kelas">transaction_status</label>
+                                                    <div class="invalid-feedback">transaction_status</div>
                                                 </div>
                                             </div>
                                             <div class="col-lg-4">
@@ -211,8 +211,8 @@ $json_spp = json_encode($spp);
                                     <td>
                                         <?php echo $row['tanggal'] ?>
                                     </td>
-                                    <td>
-                                        <?php echo $row['status'] ?>
+                                    <td style="text-align:center">
+                                        <?php echo $row['transaction_status'] ?>
                                     </td>
                                     <td class="d-flex" style="justify-content: center">
                                         <button class="btn btn-warning btn-sm me-1" data-bs-toggle="modal"

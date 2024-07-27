@@ -40,6 +40,7 @@ $bayar = $data['bayar'];
 $transaction_details = array(
     'order_id' => $order_id,
     'gross_amount' => $bayar, // no decimal allowed for creditcard
+    'quantity' => 1,
 );
 // Optional
 $item_details = array (

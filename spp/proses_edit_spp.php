@@ -8,12 +8,12 @@ $kelas = (isset($_POST['kelas'])) ? htmlentities($_POST['kelas']) : "";
 $bulan = (isset($_POST['bulan'])) ? htmlentities($_POST['bulan']) : "";
 $bayar = (isset($_POST['bayar'])) ? htmlentities($_POST['bayar']) : "";
 $tanggal = (isset($_POST['tanggal'])) ? htmlentities($_POST['tanggal']) : "";
-$status = (isset($_POST['status'])) ? htmlentities($_POST['status']) : "";
+$transaction_status = (isset($_POST['transaction_status'])) ? htmlentities($_POST['transaction_status']) : "";
 
 
 if (!empty($_POST['edit_spp_validate'])) {
     $query = mysqli_query($conn, "UPDATE spp SET nipd='$nipd', nama_siswa='$nama_siswa', kelas='$kelas', 
-    bulan='$bulan', bayar='$bayar', tanggal='$tanggal', status='$status' WHERE nipd='$nipd'");
+    bulan='$bulan', bayar='$bayar', tanggal='$tanggal', transaction_status='$transaction_status' WHERE nipd='$nipd'");
     if (!$query) {
         $_SESSION['message'] = [
             'title' => 'Tidak Ada Data Yang Diubah',
