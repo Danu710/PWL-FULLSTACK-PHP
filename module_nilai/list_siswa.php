@@ -1,15 +1,15 @@
 <?php
 include "proses/connect.php";
 
-$queryKelas = "SELECT id_siswa, nipd, nama_siswa, kelamin, tempat_lahir, tanggal_lahir FROM siswa";
+$querySiswa = "SELECT id_siswa, nipd, nama_siswa, kelas, kelamin, tempat_lahir, tanggal_lahir FROM siswa";
 
 $filterKelas = "";
 if (isset($_GET['filter_kelas'])) {
     $filterKelas = htmlspecialchars($_GET['filter_kelas']);
-    $queryKelas .= " WHERE kelas = '$filterKelas'";
+    $querySiswa .= " WHERE kelas = '$filterKelas'";
 }
 
-$query = mysqli_query($conn, $queryKelas);
+$query = mysqli_query($conn, $querySiswa);
 while ($record = mysqli_fetch_array($query)) {
     $result[] = $record;
 }
@@ -56,9 +56,9 @@ while ($record = mysqli_fetch_array($query_kelas)) {
                                 <?php foreach ($kelas as $k): ?>
                                     <option
                                         value="<?php echo htmlspecialchars($k['kelas']); ?>"
-                                        <?php $k['kelas'] == $filterKelas ? 'selected' : ''  ?>
+                                        <?= $k['kelas'] == $filterKelas ? ' selected' : ''  ?>
                                     >
-                                        <?php echo htmlspecialchars($k['kelas']); ?>
+                                        <?php echo htmlspecialchars($k['kelas']);?>
                                     </option>
                                 <?php endforeach; ?>
                             </select>
@@ -74,6 +74,7 @@ while ($record = mysqli_fetch_array($query_kelas)) {
                                 <th scope="col" style="text-align:center">ID</th>
                                 <th scope="col" style="text-align:center">NIPD</th>
                                 <th scope="col" style="text-align:center">NAMA</th>
+                                <th scope="col" style="text-align:center">KELAS</th>
                                 <th scope="col" style="text-align:center">JENIS KELAMIN</th>
                                 <th scope="col" style="text-align:center">TEMPAT LAHIR</th>
                                 <th scope="col" style="text-align:center">TANGGAL LAHIR</th>
@@ -95,6 +96,9 @@ while ($record = mysqli_fetch_array($query_kelas)) {
                                         <?php echo $row['nama_siswa'] ?>
                                     </td>
                                     <td>
+                                        <?php echo $row['kelas'] ?>
+                                    </td>
+                                    <td>
                                         <?php echo $row['kelamin'] ?>
                                     </td>
                                     <td>
@@ -104,13 +108,7 @@ while ($record = mysqli_fetch_array($query_kelas)) {
                                         <?php echo $row['tanggal_lahir'] ?>
                                     </td>
                                     <td class="d-flex" style="justify-content: center">
-                                        <button class="btn btn-warning btn-sm me-1" data-bs-toggle="modal"
-                                            data-bs-target="#modaledit<?php echo $row['id_siswa'] ?>"><i
-                                                class="bi bi-pencil-square"></i></button>
-                                        <button class="btn btn-danger btn-sm me-1" data-bs-toggle="modal"
-                                            data-bs-target="#modaldelet<?php echo $row['id_siswa'] ?>">
-                                            <i class="bi bi-trash"></i>
-                                        </button>
+                                        <a href="nilai?page=penilaian&id_siswa=<?= $row['id_siswa']?>" class="btn btn-light">Input Nilai</a>
                                     </td>
                                 </tr>
                                 <?php
