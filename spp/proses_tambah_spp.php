@@ -14,8 +14,8 @@ $order_id = rand();
 $transaction_id="";
 
 
-if(!empty($_POST['tambah_spp_validate'])) {
-    mysqli_query($conn, "INSERT INTO spp VALUES ('$nipd', '$nama_siswa', '$kelas', '$bulan', '$bayar', '$tanggal', '$status', '$order_id', '$transaction_id')");
-    header("Location: ../midtrans/examples/snap/checkout-process-simple-version.php?order_id=$order_id");
-}
+
+mysqli_query($conn, "INSERT INTO spp VALUES ('$nipd', '$nama_siswa', '$kelas', '$bulan', '$bayar', '$tanggal', '$status', '$order_id', '$transaction_id')");
+header("Location: ../midtrans/examples/snap/checkout-process-simple-version.php?order_id=$order_id");
+
 
