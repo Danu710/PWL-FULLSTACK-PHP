@@ -32,17 +32,16 @@ if ($transaction == 'settlement') {
    mysqli_query($koneksi,"update spp set transaction_status='Lunas' , transaction_id='$transaction_id' where order_id='$order_id'");
 } else if ($transaction == 'pending') {
        include "koneksi.php";
-   mysqli_query($koneksi,"update spp set transaction_status='2' where order_id='$order_id'");
- 
+   mysqli_query($koneksi,"update spp set transaction_status='Lunas' where order_id='$order_id'");
 } else if ($transaction == 'deny') {
       include "koneksi.php";
-   mysqli_query($koneksi,"update spp set transaction_status='1' where order_id='$order_id'");
+   mysqli_query($koneksi,"update spp set transaction_status='Pending' where order_id='$order_id'");
 } else if ($transaction == 'expire') {
        include "koneksi.php";
-   mysqli_query($koneksi,"update spp set transaction_status='1' where order_id='$order_id'");
+   mysqli_query($koneksi,"update spp set transaction_status='Gagal' where order_id='$order_id'");
 } else if ($transaction == 'cancel') {
      include "koneksi.php";
-   mysqli_query($koneksi,"update spp set transaction_status='1' where order_id='$order_id'");
+   mysqli_query($koneksi,"update spp set transaction_status='Gagal' where order_id='$order_id'");
  
 }
 

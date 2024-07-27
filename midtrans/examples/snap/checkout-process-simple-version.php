@@ -10,8 +10,7 @@ require_once dirname(__FILE__) . '/../../Midtrans.php';
 // can find in Merchant Portal -> Settings -> Access keys
 Config::$serverKey = 'SB-Mid-server-2w91qGKaKFF8JCCQIyyYZEiV';
 Config::$clientKey = 'SB-Mid-client-rsjAeM8gKlgTli1H';
-Config::$appendNotifUrl = "https://simsditp.tech/spp1";
-Config::$overrideNotifUrl = "https://simsditp.tech/spp1";
+
 
 // non-relevant function only used for demo/example purpose
 printExampleWarningMessage();
